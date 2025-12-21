@@ -3,18 +3,19 @@
  padding: 0;
  }
 body {
- background-color: yellow;
+background: linear-gradient(135deg, #b4e1f3, #013947);
  font-family: Verdana, sans-serif;
  font-size: 100%;
  }
 h1 {
  font-size: 800%;
- color: navy;
+ color: #040935;
  text-align: center;
  }
 h2 {
  font-size: 150%;
- color: red;
+ color: #040935;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  padding-left: 15px;
  }
 p,ul,li,td {

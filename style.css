@@ -3,10 +3,46 @@
  padding: 0;
  }
 body {
-background: linear-gradient(135deg, #b4e1f3, #013947);
  font-family: Verdana, sans-serif;
  font-size: 100%;
  }
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+ }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #80bece;
+  color: #040935;
+  flex-shrink: 0;
+}
+.header-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;  
+ }
+.header-nav a {
+  color: #4b59d6;
+  text-decoration: none;
+  font-weight: bold;
+}
+.site-main {
+  flex: 1 1 auto;
+  overflow: auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #b4e1f3, #013947);
+}
+.site-footer {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #17113b;
+  color: #fff;
+}
 h1 {
  font-size: 800%;
  color: #040935;
@@ -18,21 +54,22 @@ h2 {
  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  padding-left: 15px;
  }
-p,ul,li,td {
- color: grey;
+ul,li,td {
+ color: rgb(21, 30, 110);
  }
 
 
-a:link {
- color: green;
- text-decoration: underline;
+a {
+ color: rgb(68, 76, 141);
+ text-decoration: none;
  }
 a:visited {
- color: gray;
+ color: rgb(46, 18, 112);
  }
 a:hover {
- color: red;
+ color: rgb(28, 44, 129);
  text-decoration: none;
+ font-weight: bold;
 }
 a:active, a:focus {
  color: red;

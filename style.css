@@ -11,14 +11,17 @@ body {
   flex-direction: column;
   height: 100vh;
  }
-.site-header {
+ .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #80bece;
-  color: #040935;
+  padding: 20px 20px;
+  background-color: #17113b;
+  color: #fff;
   flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 .header-title {
   text-align: center;
@@ -26,13 +29,16 @@ body {
   font-weight: bold;  
  }
 .header-nav a {
-  color: #4b59d6;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-}
+ }
+.header-nav a:hover {
+    font-weight: bold; 
+ }
 .site-main {
   flex: 1 1 auto;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 20px;
   background: linear-gradient(135deg, #b4e1f3, #013947);
 }
@@ -42,7 +48,10 @@ body {
   text-align: center;
   background-color: #17113b;
   color: #fff;
-}
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+ }
 h1 {
  font-size: 800%;
  color: #040935;
@@ -59,18 +68,3 @@ ul,li,td {
  }
 
 
-a {
- color: rgb(68, 76, 141);
- text-decoration: none;
- }
-a:visited {
- color: rgb(46, 18, 112);
- }
-a:hover {
- color: rgb(28, 44, 129);
- text-decoration: none;
- font-weight: bold;
-}
-a:active, a:focus {
- color: red;
-}

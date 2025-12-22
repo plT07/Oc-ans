@@ -41,7 +41,13 @@ body {
   overflow-x: hidden;
   padding: 20px;
   background: linear-gradient(135deg, #b4e1f3, #013947);
+
 }
+.site-main a {
+  color: rgb(8, 5, 61); 
+  
+}
+
 .site-footer {
   flex-shrink: 0;
   padding: 10px 20px;

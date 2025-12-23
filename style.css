@@ -68,15 +68,19 @@ body {
  }
 
 /* Optional different colors per ocean */
-.ocean-button.pacific  { background-color: #006994; }
+.ocean-button.pacific { background-color: #006994; }
+.ocean-button.atlantic { background-color: #005f99; }
+.ocean-button.indian { background-color: #009918; }
+.ocean-button.southern { background-color: #004f66; }
+.ocean-button.arctic { background-color: #337ab7; }
 .site-main {
   flex: 1 1 auto;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 20px;
   background: linear-gradient(135deg, #b4e1f3, #013947);
-
  }
+
 .site-main a {
   color: rgb(8, 5, 61); 
   

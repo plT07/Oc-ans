@@ -19,6 +19,10 @@
 
 <!-- Balise <style> : permet d'ajouter du CSS directement dans le fichier HTML -->
 <link rel="stylesheet" href="style.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 <style>
 /* Règle CSS pour supprimer la bordure autour de l'iframe YouTube */
 iframe {
@@ -37,12 +41,21 @@ iframe {
       </nav>
     </header><!-- Paragraphe d'introduction avec un point d'ancrage "debut" pour le lien interne -->
       <!-- corps de texte -->
-      <main class="site-main">
+      <main class="site-main" id="content"> 
 
         <!-- <h1> : titre de niveau 1, le plus important de la page (il devrait y en avoir un seul) -->
-        <h1>Les Océans</h1>
+        
 
         <ul>Sommaire :</ul>
+        <spam><i>Veuillez sélectionner l'océans de votre choix.</i></spam>
+        <div class="ocean-buttons">
+          <button class="ocean-button pacific" onclick="loadPage('pages/pacifique.html')">
+            Océan Pacifique
+            <i class="fa-solid fa-volcano"></i>
+          </button>
+
+        </div>
+
         <ul>
           <li><a href="pages/pacifique.html">Océan Pacifique</a> Le plus vaste et le plus profond</li>
           <li><a href="pages/atlantique.html">Océan Atlantique</a> Le deuxième plus grand, séparant les Amériques de l'Europe et l'Afrique</li>
@@ -113,9 +126,10 @@ iframe {
           mais qui cible un document enregistré dans le même dossier que le fichier html en cours d'utilisation.
         </p>
       </main>
+<script src="script.js"></script>
     <footer class="site-footer">
       <p>&copy; 2025 projet Océans - Pierre-Louis.Thevenard</p>
     </footer>
   </div>
 </body> <!-- Fin du corps de la page -->
-</html> <!-- Fin du document HTML -->
+</html> <!-- Fin du document HTML --> 

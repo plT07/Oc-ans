@@ -41,7 +41,7 @@ iframe {
       </nav>
     </header><!-- Paragraphe d'introduction avec un point d'ancrage "debut" pour le lien interne -->
       <!-- corps de texte -->
-      <main class="site-main" id="content"> 
+      <main class="site-main" id="content">
 
         <!-- <h1> : titre de niveau 1, le plus important de la page (il devrait y en avoir un seul) -->
         
@@ -49,11 +49,35 @@ iframe {
         <ul>Sommaire :</ul>
         <spam><i>Veuillez sélectionner l'océans de votre choix.</i></spam>
         <div class="ocean-buttons">
-          <button class="ocean-button pacific" onclick="loadPage('pages/pacifique.html')">
-            Océan Pacifique
-            <i class="fa-solid fa-volcano"></i>
+          <div class="ocean-ligne">
+            <button class="ocean-button pacific" onclick="loadPage('pages/pacifique.html')">
+              Océan Pacifique
+              <i class="fa-solid fa-volcano"></i>
+            </button>
+            <spam class="ocean-note">Le plus vaste et le plus profond</spam>
+          </div>
+          <div class="ocean-ligne">
+          <button class="ocean-button atlantic" onclick="loadPage('pages/atlantic.html')">
+            Atlantic
+            <i class="fa-solid fa-water"></i>
           </button>
-
+          <spam class="ocean-note">Le deuxième plus grand, séparant les Amériques de l'Europe et l'Afrique</spam>
+        </div>
+          <button class="ocean-button indian" onclick="loadPage('pages/indian.html')">
+            Indian
+            <i class="fa-solid fa-fish"></i>
+          </button>
+        
+          <button class="ocean-button southern" onclick="loadPage('pages/southern.html')">
+            Southern
+            <i class="fa-solid fa-ice-cream"></i>
+          </button>
+        
+          <button class="ocean-button arctic" onclick="loadPage('pages/arctic.html')">
+            Arctic
+            <i class="fa-solid fa-snowflake"></i>
+          </button>
+          
         </div>
 
         <ul>

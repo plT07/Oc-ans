@@ -23,12 +23,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   >
-<style>
-/* Règle CSS pour supprimer la bordure autour de l'iframe YouTube */
-iframe {
-  border: none; /* Retire la bordure par défaut */
-}
-</style>
+
 
 </head> <!-- Fin de la section d'en-tête -->
 
@@ -42,19 +37,18 @@ iframe {
     </header><!-- Paragraphe d'introduction avec un point d'ancrage "debut" pour le lien interne -->
       <!-- corps de texte -->
       <main class="site-main" id="content">
-
-        <!-- <h1> : titre de niveau 1, le plus important de la page (il devrait y en avoir un seul) -->
         
 
-        <ul>Sommaire :</ul>
-        <spam><i>Veuillez sélectionner l'océans de votre choix.</i></spam>
-        <div class="ocean-buttons">
+        <h2>Sommaire :</h2>
+        <p><i>Veuillez sélectionner l'océan de votre choix.</i></p>
+        <br/>
+        <nav class="ocean-buttons">
           <div class="ocean-ligne">
             <button class="ocean-button pacific" onclick="loadPage('pages/pacifique.html')">
               Océan Pacifique
               <i class="fa-solid fa-volcano"></i>
             </button>
-            <spam class="ocean-note">Le plus vaste et le plus profond</spam>
+            <span class="ocean-note">Le plus vaste et le plus profond</span>
           </div>
 
           <div class="ocean-ligne">
@@ -62,7 +56,7 @@ iframe {
             Océan Atlantique
             <i class="fa-solid fa-water"></i>
           </button>
-          <spam class="ocean-note">Le deuxième plus grand, séparant les Amériques de l'Europe et l'Afrique</spam>
+          <span class="ocean-note">Le deuxième plus grand, séparant les Amériques de l'Europe et l'Afrique</span>
           </div>
 
           <div class="ocean-ligne">
@@ -70,7 +64,7 @@ iframe {
             Océan Indien
             <i class="fa-solid fa-fish"></i>
           </button>
-          <spam class="ocean-note">Situé entre l'Afrique et l'Australie</spam>
+          <span class="ocean-note">Situé entre l'Afrique et l'Australie</span>
           </div>
 
           <div class="ocean-ligne">
@@ -78,7 +72,7 @@ iframe {
             Océan Arctique
             <i class="fa-solid fa-snowflake"></i>
           </button>
-          <spam class="ocean-note">Le plus petit, le moins profond et le plus froid</spam>
+          <span class="ocean-note">Le plus petit, le moins profond et le plus froid</span>
           </div>
   
           <div class="ocean-ligne">
@@ -86,81 +80,25 @@ iframe {
             Océan Austral
             <i class="fa-solid fa-ice-cream"></i>
           </button>
-          <spam class="ocean-note">Entoure de continent de l'Antarctique</spam>
+          <span class="ocean-note">Entoure de continent de l'Antarctique</span>
           </div>
 
-        </div>
+        </nav>     
+    <!-- Carte des océans du monde avec coordonnées pour chaque océan https://www.image-map.net/ -->
+        <section class="map-section">
+          <h2>Carte des océans du monde :</h2>
+          <img src="ocean-map.png" alt="Carte des océans" usemap="#ocean-map">
+          <map name="ocean-map">
+            <area shape="poly" coords="661,45,659,57,665,74,651,72,628,65,637,83,650,98,660,112,665,126,656,138,643,130,625,120,633,148,631,162,617,173,618,187,614,203,599,196,611,216,620,228,634,216,642,175,649,189,659,202,656,212,649,201,642,193,648,223,656,225,667,222,690,229,703,237,715,237,713,253,697,252,682,244,654,231,675,258,700,268,704,288,701,310,686,330,677,338,656,356,625,393,683,403,765,323,794,256,785,164,731,89" href="pages/pacifique.html" alt="Océan Pacifique (Est)" onclick="loadPage('pages/pacifique.html'); return false;">
+            <area shape="poly" coords="133,41,91,72,46,116,15,162,2,239,8,273,20,301,30,322,45,339,60,351,72,366,87,381,105,392,114,398,140,396,176,390,210,387,228,385,256,382,252,370,243,362,235,344,233,329,229,308,229,286,218,275,205,258,199,234,205,210,185,202,167,189,151,177,138,155,134,126,138,108,146,102,154,73,145,59,129,65,110,69" href="pages/pacifique.html" alt="Océan Pacifique (Ouest)" onclick="loadPage('pages/pacifique.html'); return false;">
+            <area shape="poly" coords="322,63,306,76,321,64,354,64,362,91,361,118,356,148,360,142,361,130,345,163,360,153,339,195,365,139,346,206,360,218,381,220,397,221,401,237,409,253,406,272,408,290,414,303,420,319,415,342,418,357,417,366,406,372,376,375,349,377,317,379,287,377,264,380,259,356,264,333,271,319,276,304,282,291,291,285,294,270,301,260,301,247,280,230,263,230,253,212,241,202,202,199,194,185,209,167,220,140,235,125,250,118,262,111,273,107,278,100,279,88,274,73,281,61" href="pages/atlantique.html" alt="Océan Atlantique" onclick="loadPage('pages/atlantique.html'); return false;">
+            <area shape="poly" coords="424,316,420,376,618,391,644,369,654,328,643,316,622,287,649,272,641,282,652,255,600,236,589,219,595,208,573,173,593,193,598,201,559,186,566,175,582,180,582,189,547,206,557,197,538,186,518,166,499,183,487,195,492,206,486,219,473,230,471,242,467,251,468,260,469,273,461,274,458,285,454,298,445,310,436,318,473,293,481,291,482,282,486,271,489,260,482,267,478,289,473,279,473,287,478,289,478,291,455,297,453,303,449,307" href="pages/indien.html" alt="Océan Indien" onclick="loadPage('pages/indien.html'); return false;">
+            <area shape="poly" coords="143,35,171,30,186,37,201,39,213,43,215,32,236,22,280,17,307,17,332,18,358,20,369,19,362,35,356,47,347,56,332,56,355,59,385,42,402,27,421,26,419,44,448,54,463,47,476,29,473,44,488,37,511,33,506,22,538,29,563,33,576,33,578,24,589,30,654,34,576,2,388,1,227,1,187,14" href="pages/arctique.html" alt="Océan Arctique" onclick="loadPage('pages/arctique.html'); return false;">
+            <area shape="poly" coords="119,403,190,436,208,424,245,418,277,414,287,393,286,405,303,418,292,429,308,433,334,431,355,417,371,409,409,404,438,403,468,393,483,397,496,407,518,397,545,400,578,401,608,405,619,414,621,422,602,429,581,439,592,445,675,404,536,385,420,379,264,384" href="pages/austral.html" alt="Océan Austral" onclick="loadPage('pages/austral.html'); return false;">
+          </map>
+        </section>
+    </main>
 
-        <ul>
-          <li><a href="pages/pacifique.html">Océan Pacifique</a> Le plus vaste et le plus profond</li>
-          <li><a href="pages/atlantique.html">Océan Atlantique</a> Le deuxième plus grand, séparant les Amériques de l'Europe et l'Afrique</li>
-          <li><a href="pages/indien.html">Océan Indien</a> Situé entre l'Afrique et l'Australie</li>
-          <li><a href="pages/arctique.html">Océan Arctique</a> Le plus petit, le moins profond et le plus froid</li>
-          <li><a href="pages/austral.html">Océan Austral</a> entoure de continent de l'Antarctique</li>
-        </ul>
-
-
-
-        <!-- <h2> : titre de niveau 2, sous-titre du h1 -->
-        
-        <!-- Paragraphe avec balise <em> : met en emphase (italique par défaut) le mot "fond" -->
-           <iframe> : intègre une page externe (ici une vidéo YouTube) dans la page -->
-        <iframe 
-          width="560"           <!-- Largeur de l'iframe en pixels -->
-          height="315"          <!-- Hauteur de l'iframe en pixels -->
-          src="https://www.youtube.com/embed/gnIGzkGVDQo" <!-- URL de la vidéo YouTube à afficher -->
-          title="YouTube video player" <!-- Titre de l'iframe pour l'accessibilité -->
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" <!-- Permissions accordées à l'iframe -->
-          allowfullscreen>      <!-- Autorise le mode plein écran -->
-        </iframe>
-
-        <!-- Paragraphe avec retour à la ligne <br/> -->
-        <p>Le langage html ne permet dans un premier temps que de s'occuper du fond. <br/>La forme sera gérée par un second fichier que nous observerons ultérieurement.</p>
-
-        <!-- Paragraphe expliquant l'insertion d'images -->
-        <p>Dans la liste des fonds possibles, nous parlions d'images. Il est effectivement possible d'insérer des images grâce à du code HTML. Il est également possible de régler ses dimensions</p>
-
-        <!-- <img> : balise pour insérer une image -->
-        <img 
-          width="200"           <!-- Largeur de l'image en pixels -->
-          height="100"          <!-- Hauteur de l'image en pixels -->
-          src="books.jpg"       <!-- Chemin vers le fichier image (doit être dans le même dossier) -->
-          alt="photo de livre"> <!-- Texte alternatif si l'image ne charge pas, important pour l'accessibilité -->
-
-        <!-- Paragraphe d'avertissement avec texte en gras -->
-        <p><b>Attention :</b> être capable d'insérer des images ne veut pas dire qu'on en a le droit ! Vérifiez toujours les droits associés à une image que vous souhaitez utiliser.</p>
-
-        <!-- Paragraphe avec un lien hypertexte -->
-        <p>L'un des intérêts du langage html est l'utilisation de liens hypertextes 
-          <!-- <a> : balise de lien hypertexte (anchor) -->
-          <a 
-            href="https://www.w3schools.com/html/html_images.asp" <!-- URL de destination du lien -->
-            target="_blank">    <!-- Ouvre le lien dans un nouvel onglet -->
-            Comme celui-ci      <!-- Texte cliquable visible par l'utilisateur -->
-          </a>. Un lien hypertexte a deux propriétés :
-        </p>
-
-        <!-- Liste des propriétés d'un lien -->
-        <ul>
-          <li>le texte que verra l'utilisateur</li>
-          <li>l'adresse de la page à ouvrir si l'utilisateur clic sur ce lien</li>
-        </ul>
-
-        <!-- Paragraphe avec deux types de liens : externe et interne -->
-        <p>Il en existe de deux types : 
-          <!-- Lien externe : pointe vers un site web différent -->
-          <a href="https://openclassrooms.com">externes</a> ou 
-          <!-- Lien interne : pointe vers un élément de la même page grâce à l'id "debut" -->
-          <a href="#debut">internes</a>.
-        </p>
-
-        <!-- Paragraphe avec un lien vers un fichier local -->
-        <p>Enfin, il peut être très utile de savoir lier deux pages que vous avez créées : il s'agit d'un 
-          <!-- Lien relatif : pointe vers un fichier HTML dans le même dossier -->
-          <a href="tp_html1.html">lien hypertexte</a>, 
-          mais qui cible un document enregistré dans le même dossier que le fichier html en cours d'utilisation.
-        </p>
-      </main>
 <script src="script.js"></script>
     <footer class="site-footer">
       <p>&copy; 2025 projet Océans - Pierre-Louis.Thevenard</p>

@@ -39,7 +39,7 @@ body {
  }
 .ocean-buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
  }
  .ocean-ligne {
@@ -92,6 +92,64 @@ body {
   font-style: italic;
 
  }
+
+ #content h2 {
+  color: #001f3f;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+}
+
+#content h3 {
+  color: #002a52;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+#content p {
+  color: #003d5c;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#content ul {
+  color: #003d5c;
+}
+
+#content li {
+  color: #003d5c;
+  margin-bottom: 0.5rem;
+}
+#content iframe {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Style pour la section carte des océans */
+.map-section {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 1000px;
+  background: transparent;
+}
+
+.map-section h2 {
+  color: #001f3f;
+  margin-bottom: 1.5rem;
+}
+
+.map-section img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
 
 .site-footer {
   flex-shrink: 0;

@@ -86,7 +86,7 @@
         </nav>     
     <!-- Carte des océans du monde avec coordonnées pour chaque océan https://www.image-map.net/ -->
         <section class="map-section">
-          <h2>Carte des océans du monde :</h2>
+          <h2>Carte des océans du monde</h2>
           <img src="ocean-map.png" alt="Carte des océans" usemap="#ocean-map">
           <map name="ocean-map">
             <area shape="poly" coords="661,45,659,57,665,74,651,72,628,65,637,83,650,98,660,112,665,126,656,138,643,130,625,120,633,148,631,162,617,173,618,187,614,203,599,196,611,216,620,228,634,216,642,175,649,189,659,202,656,212,649,201,642,193,648,223,656,225,667,222,690,229,703,237,715,237,713,253,697,252,682,244,654,231,675,258,700,268,704,288,701,310,686,330,677,338,656,356,625,393,683,403,765,323,794,256,785,164,731,89" href="pages/pacifique.html" alt="Océan Pacifique (Est)" onclick="loadPage('pages/pacifique.html'); return false;">
@@ -101,8 +101,9 @@
 
 <script src="script.js"></script>
     <footer class="site-footer">
-      <p>&copy; 2025 projet Océans - Pierre-Louis.Thevenard</p>
-    </footer>
+      <p>&copy; <span id="copyright"></span> projet Océans - Pierre-Louis.Thevenard</p>
+    </footer>  
+<script src="footer.js"></script>
   </div>
 </body> <!-- Fin du corps de la page -->
 </html> <!-- Fin du document HTML --> 

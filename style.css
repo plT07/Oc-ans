@@ -78,7 +78,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 20px;
-  background: linear-gradient(135deg, #b4e1f3, #013947);
+  background: linear-gradient(135deg, #b4e1f3, #6fb3c7 20%, #3a7a8f 85%, rgba(4, 72, 88, 0.9));
  }
 
 .site-main a {
@@ -128,6 +128,16 @@ body {
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Style pour les images dans les pages océans */
+#content img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Style pour la section carte des océans */

@@ -185,5 +185,15 @@ h2 {
 ul,li,td {
  color: rgb(21, 30, 110);
  }
+ @media screen and (max-width: 768px) {
+  .ocean-ligne {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ocean-button {
+    width: 100%;
+  }
+ } 
+
 
 
